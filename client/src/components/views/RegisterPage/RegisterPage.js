@@ -34,9 +34,8 @@ function RegisterPage(props) {
 
         let body = {
             email:email,
-            name:name,
             password: password,
-
+            name:name,
         }
         dispatch(registerUser(body)).then(response => {
             if(response.payload.success){

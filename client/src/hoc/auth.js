@@ -8,8 +8,8 @@ export default function Auth(SpecificComponent, option, adminRoute = null){
     //true -> 로그인한 유저만 출입이 가능한 페이지
     //false -> 로그인한 유저는 출입 불가능한 페이지
 
-    const dispatch = useDispatch();
     function AuthenticationCheck(props){
+        const dispatch = useDispatch();
         useEffect(() => {
             dispatch(auth()).then(response => {
                 console.log(response)
