@@ -1,3 +1,4 @@
+const port = 5000;
 const express = require('express')
 const app = express()
 const bodyParser = require('body-parser');
@@ -84,7 +85,7 @@ app.get('/api/users/logout', auth , (req , res) => {
     });
 });
 
-const port = 5000;
+
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
 })
